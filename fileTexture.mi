@@ -1,0 +1,11 @@
+declare shader
+   struct {
+      color		"outColor",
+      scalar	"outAlpha"
+  } "fileTexture" (
+      string	"fileName",
+      vector	"uvCoord"
+  )
+  version 1
+  apply texture
+end declare
